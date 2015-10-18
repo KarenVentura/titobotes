@@ -1,0 +1,2 @@
+module GarbageEventHelper
+end
