@@ -4,4 +4,6 @@ class EventsController < ApplicationController
       event = Event.last
       render json: event 
 	end
+
+	
 end
