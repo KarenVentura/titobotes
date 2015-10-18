@@ -1,28 +1,5 @@
-== README
+Proyecto de creación de conciencia “Tito Botes”
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Con el proyecto se pretende crear cultura y conciencia en las personas sobre el cuidado del medio ambiente mediante reciclaje. 
+Tito botes es un contenedor donde las personas podrán depositar botellas de plástico, e inmediatamente Tito Botes desplegara una canción y un mensaje de voz de agradecimiento muy llamativas. Al instante emitirá un mensaje para que la persona se prepare por que se tomara una foto y la subirá a Twitter.
+Para que la gente se sienta más motivada se pretende que cada vez que deposite un bote en ciertas ocasiones pueda ser acreedor aun premio
