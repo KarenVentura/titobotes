@@ -2,6 +2,27 @@
 <html>
 <head>
 	<title></title>
+
+<script>
+   var last_id = 0;
+   var miliseconds = 1000;
+   setInterval(function() {
+   $.get('/events/last', function(data){
+     if (data.id != last_id)
+     {
+     	//if (last_id > 0)
+     	{
+     		window.location = '/welcome/new';
+     	}
+     	last_id = data.id     	
+     }
+   }).fail(function(data) {
+     console.log('Something went wrong', data);
+   });
+   }, miliseconds);
+</script>
+
+</script>
 </head>
 <body>
 <h1>El día luce genial, listo para reciclar</h1>
