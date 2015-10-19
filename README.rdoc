@@ -1,5 +1,1 @@
-Proyecto de creación de conciencia “Tito Botes”
 
-Con el proyecto se pretende crear cultura y conciencia en las personas sobre el cuidado del medio ambiente mediante reciclaje. 
-Tito botes es un contenedor donde las personas podrán depositar botellas de plástico, e inmediatamente Tito Botes desplegara una canción y un mensaje de voz de agradecimiento muy llamativas. Al instante emitirá un mensaje para que la persona se prepare por que se tomara una foto y la subirá a Twitter.
-Para que la gente se sienta más motivada se pretende que cada vez que deposite un bote en ciertas ocasiones pueda ser acreedor aun premio
