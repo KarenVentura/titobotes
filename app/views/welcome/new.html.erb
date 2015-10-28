@@ -1,32 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TitoBotes</title>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="stylesheet/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet/creative.css" type="text/css">
+    <script type="text/javascript"> 
+      var num=10; 
+      function contador()
+      { 
+        num--; 
+        if(num==0) location='_dos.html';
+          document.getElementById('seg').innerHTML=num; 
+        } 
+    </script>
 </head>
-<body>
-<h1>Gracias por ayudarnos a conservar nuestro medio ambiente!!!!!! :))</h1>
-<h1>Gracias Por ser una persona responsable!!!!!! :))</h1>
-<h1>Que todo mundo sepa que estas reciclandoooooooooooo </h1>
-<h1>.... y ahora que todos tus amigos en redes sociales se enteren</h1>
-<h1>Estas Preparado para ser Parte de esta experiencia? </h1>
-<h1>Hey Let's go, taking a Selfie</h1>
-<div>
-  
-</div>
-<%= audio_tag('selfie.mp3', autoplay: true, controls: true) %>
-<div>
- <%= link_to 'Experimenta', welcome_update_path, class: 'btn btn-primary pull-right' %>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div style="margin-left: 150px;"><%= image_tag('equipo.jpg') %></div>
-</div>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+        <%= link_to 'Experimenta', welcome_update_path, class: 'btn btn-primary pull-right' %>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Gracias por ayudarnos a conservar nuestro medio ambiente!</h2>
+                    <h2 class="section-heading">Gracias Por ser una persona responsable!</h2>
+                    <h2 class="section-heading">Que todo mundo sepa que estas reciclandoooooooooooo </h2>
+                    <h2 class="section-heading">.... y ahora que todos tus amigos en redes sociales se enteren</h2>
+                    <h2 class="section-heading">Estas Preparado para ser Parte de esta experiencia? </h2>
+                    <h2 class="section-heading">Hey Selfie</h2> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <%= audio_tag('selfie.mp3', autoplay: true, controls: true) %>
+            </div>
+        </div>
+    </aside>
+    <MARQUEE SCROLLAMOUNT=10><h2 class="section-heading">Gracias! Gracias! Gracias! :)</h2></MARQUEE>
+    <div onload="setInterval('contador()',1000)">
+      <p> Preparate <span id="seg">10</span> segundos.</p> 
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
 </body>
+
 </html>
+

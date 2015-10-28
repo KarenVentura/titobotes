@@ -65,7 +65,7 @@ p {
 }
 
 section {
-    padding: 15px 0;
+    padding: 100px 0;
 }
 
 aside {
@@ -174,11 +174,15 @@ aside {
 
 header {
     position: relative;
-    opacity: 0.5;
     width: 100%;
     min-height: auto;
     text-align: center;
-    color: black;
+    color: #fff;
+    background-image: url(../assets/images/medioambiente.jpg);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
     -o-background-size: cover;
 }
 
@@ -215,7 +219,7 @@ header .header-content .header-content-inner p {
     header .header-content {
         position: absolute;
         top: 50%;
-        padding: 0 40px;
+        padding: 0 50px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);

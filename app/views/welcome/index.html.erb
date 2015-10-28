@@ -1,36 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
 
-<script>
-   var last_id = 0;
-   var miliseconds = 1000;
-   setInterval(function() {
-   $.get('/events/last', function(data){
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>TitoBotes</title>
+    <script>
+      var last_id = 0;
+      var miliseconds = 1000;
+      setInterval(function() {
+     $.get('/events/last', function(data){
      if (data.id != last_id)
      {
-     	//if (last_id > 0)
-     	{
-     		window.location = '/welcome/new';
-     	}
-     	last_id = data.id     	
+        if (last_id > 0)
+       {
+          window.location = '/welcome/new';
+        }
+      last_id = data.id       
      }
-   }).fail(function(data) {
-     console.log('Something went wrong', data);
-   });
-   }, miliseconds);
-</script>
+     }).fail(function(data) {
+        console.log('Something went wrong', data);
+      });
+      }, miliseconds);
+    </script>
 
-</script>
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+
+    <!-- Custom Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
+
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="stylesheet/animate.min.css" type="text/css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="stylesheet/creative.css" type="text/css">
+
 </head>
-<body>
-<h1>El día luce genial, listo para reciclar</h1>
-<%= image_tag('medio.jpg') %>
-<%= image_tag('medioambiente.jpg') %>
-<%= image_tag('am.jpg') %>
-<div>
-    <%= link_to 'Experimenta', welcome_new_path, class: 'btn btn-primary pull-right' %>
-</div>
+
+<body id="page-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+           <%= link_to 'Experimenta', welcome_new_path, class: 'btn btn-primary pull-right' %>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+     <section class="bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                   <MARQUEE SCROLLAMOUNT=10><h2 class="section-heading">Necesitamos gente como tu!!</h2></MARQUEE>
+                   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header>
+        <div class="header-content">
+          <MARQUEE><%= image_tag('recicla.jpg') %></MARQUEE>
+            <div class="header-content-inner">
+                <%= image_tag('medioambiente.jpg') %>
+                <MARQUEE DIRECTION=RIGHT><h1>Te invito a reciclar</h1></MARQUEE>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/jquery.fittext.js"></script>
+    <script src="js/wow.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/creative.js"></script>
+
 </body>
+
 </html>
